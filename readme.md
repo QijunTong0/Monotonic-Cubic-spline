@@ -1,5 +1,5 @@
 # monotinic cubic spline
 
-In ordinary spline interpolation, interpolation curves may overshort. In other words, the interpolation curve for interpolating a monotonically increasing point sequence is not necessarily a monotonically increasing function. Therefore, a more intuitive interpolation is the monotonic cubic spline. Instead of discarding the continuity of the second derivative, which is the usual requirement for spline interpolation curves, the coefficient conditions are given such that the interpolating function is monotonically increasing. The implementation is in C.
+Standard spline interpolation often suffers from "overshoot." In other words, an interpolation curve derived from a monotonically increasing set of data points is not guaranteed to be a monotonically increasing function itself.
 
-Translated with www.DeepL.com/Translator
+To achieve a more intuitive result, monotonic cubic spline interpolation was developed. This method sacrifices the continuity of the second derivative—a standard requirement for cubic splines—in exchange for specific coefficient constraints that ensure the resulting function remains monotonic.
